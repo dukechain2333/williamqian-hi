@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full bg-gradient-to-tl from-black to-red-950">{children}</body>
     </html>
   )
 }
