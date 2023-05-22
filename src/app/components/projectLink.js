@@ -19,7 +19,7 @@ export const ProjectLink = (props) => {
                     {props.title}
                 </h2>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 font-mono">
-                    {props.description !== null ? props.description : "This guy was lazy, he didn't write an description."}
+                    {props.description !== null ? props.description : "This guy was lazy, he didn't write any description."}
                 </p>
             </article>
         </Link>
