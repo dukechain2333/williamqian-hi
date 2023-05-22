@@ -18,7 +18,7 @@ export default function Page() {
         <Content>
             <Bar/>
             <div
-                className="mt-28 mb-10 2xl:w-1/2 2xl:left-auto 2xl:right-auto xl:w-2/3 xl:left-auto xl:right-auto lg:w-2/3 lg:left-auto lg:right-auto sm:w-full px-5">
+                className="mt-28 mb-10 2xl:w-1/2 2xl:left-auto 2xl:right-auto xl:w-2/3 xl:left-auto xl:right-auto lg:w-full lg:left-auto lg:right-auto sm:w-full px-5">
                 <div className="max-w-2xl mx-auto lg:mx-0">
                     <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl font-mono">
                         Projects
@@ -32,7 +32,7 @@ export default function Page() {
             <div className="w-full h-px bg-zinc-800"/>
 
             <div
-                className="flex px-5 mt-10 2xl:w-1/2 2xl:left-auto 2xl:right-auto xl:w-2/3 xl:left-auto xl:right-auto lg:w-2/3 lg:left-auto lg:right-auto sm:w-full">
+                className="flex px-5 mt-10 2xl:w-1/2 2xl:left-auto 2xl:right-auto xl:w-2/3 xl:left-auto xl:right-auto lg:w-full lg:left-auto lg:right-auto sm:w-full">
                 <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
                     <div className="grid grid-cols-1 gap-4">
                         {sortedData
