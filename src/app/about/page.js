@@ -18,7 +18,7 @@ export default function Page() {
                 <br/>
                 <p className="text-white font-mono">
                     Although Mr. Qian is now studying Biostatistics, he spends a lot of time on programming. He is very
-                    interested in developing applications and training deep learning models. Please don't forget that
+                    interested in developing applications and training deep learning models. Please do not forget that
                     this man spent 4 years time on studying Data Science, which is a subject that requires a lot of
                     programming and statistic skills. After several years of study, programming has already became part
                     of his life, and also became one of his hobbies.
