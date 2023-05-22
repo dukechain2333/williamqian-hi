@@ -12,6 +12,8 @@ export default function Page() {
     if (error) return <div>failed to load</div>;
     if (!data) return <div>loading...</div>;
 
+    const sortedData = data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
     return (
         <Content>
             <Bar/>
@@ -33,7 +35,7 @@ export default function Page() {
                 className="flex px-5 mt-10 2xl:w-1/2 2xl:left-auto 2xl:right-auto xl:w-2/3 xl:left-auto xl:right-auto lg:w-2/3 lg:left-auto lg:right-auto sm:w-full">
                 <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
                     <div className="grid grid-cols-1 gap-4">
-                        {data
+                        {sortedData
                             .filter((_, i) => i % 3 === 0)
                             .map((project, index) => (
                                 <ProjectCard key={project.id}>
@@ -43,7 +45,7 @@ export default function Page() {
                             ))}
                     </div>
                     <div className="grid grid-cols-1 gap-4">
-                        {data
+                        {sortedData
                             .filter((_, i) => i % 3 === 1)
                             .map((project, index) => (
                                 <ProjectCard key={project.id}>
@@ -53,7 +55,7 @@ export default function Page() {
                             ))}
                     </div>
                     <div className="grid grid-cols-1 gap-4">
-                        {data
+                        {sortedData
                             .filter((_, i) => i % 3 === 2)
                             .map((project, index) => (
                                 <ProjectCard key={project.id}>
